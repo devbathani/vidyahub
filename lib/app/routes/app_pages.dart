@@ -1,4 +1,6 @@
 import 'package:get/get.dart';
+import 'package:vidhya_hub/app/modules/onboarding/bindings/onboarding_binding.dart';
+import 'package:vidhya_hub/app/modules/onboarding/views/onboarding_view.dart';
 
 import '../modules/assignment/bindings/assignment_binding.dart';
 import '../modules/assignment/views/assignment_view.dart';
@@ -20,9 +22,14 @@ part 'app_routes.dart';
 class AppPages {
   AppPages._();
 
-  static const INITIAL = Routes.HOME;
+  static const INITIAL = Routes.ONBOARDING;
 
   static final routes = [
+    GetPage(
+      name: _Paths.ONBOARDING,
+      page: () => OnboardingView(),
+      binding: OnboardingBinding(),
+    ),
     GetPage(
       name: _Paths.HOME,
       page: () => HomeView(),
