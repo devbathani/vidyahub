@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:google_fonts/google_fonts.dart';
 import 'package:vidhya_hub/app/common/styles/colors.dart';
 import 'package:vidhya_hub/app/modules/onboarding/controllers/onboarding_controller.dart';
 import "package:flutter_svg/flutter_svg.dart";
 import 'package:vidhya_hub/app/routes/app_pages.dart';
+
+import '../../../common/styles/app_text_style.dart';
 
 class OnboardingView extends GetView<OnboardingController> {
   @override
@@ -52,11 +53,7 @@ class OnboardingView extends GetView<OnboardingController> {
                     child: Center(
                       child: Text(
                         "Login",
-                        style: GoogleFonts.poppins(
-                          fontSize: w / 23,
-                          color: Colors.white,
-                          fontWeight: FontWeight.w500,
-                        ),
+                        style: MyTextStyles.buttonTextStyle,
                       ),
                     ),
                   ),
@@ -68,12 +65,12 @@ class OnboardingView extends GetView<OnboardingController> {
                   onTap: () {
                     Get.toNamed(Routes.REGISTER);
                   },
-                  child: Text("Create Account",
-                      style: GoogleFonts.poppins(
-                        fontSize: w / 23,
-                        color: AppColors.buttonColor,
-                        fontWeight: FontWeight.w500,
-                      )),
+                  child: Text(
+                    "Create Account",
+                    style: MyTextStyles.buttonTextStyle.copyWith(
+                      color: AppColors.buttonColor,
+                    ),
+                  ),
                 )
               ],
             ),
