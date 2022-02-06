@@ -68,12 +68,14 @@ class OnboardingView extends GetView<OnboardingController> {
                   onTap: () {
                     Get.toNamed(Routes.REGISTER);
                   },
-                  child: Text("Create Account",
-                      style: GoogleFonts.poppins(
-                        fontSize: w / 23,
-                        color: AppColors.buttonColor,
-                        fontWeight: FontWeight.w500,
-                      )),
+                  child: Text(
+                    "Create Account",
+                    style: GoogleFonts.poppins(
+                      fontSize: w / 23,
+                      color: AppColors.buttonColor,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
                 )
               ],
             ),
