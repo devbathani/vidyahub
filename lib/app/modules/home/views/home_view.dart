@@ -20,7 +20,7 @@ class HomeView extends GetView<HomeController> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
-            height: h * 0.15,
+            height: h * 0.03,
           ),
           Padding(
             padding: EdgeInsets.symmetric(
