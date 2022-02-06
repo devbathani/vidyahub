@@ -4,37 +4,13 @@ import 'package:get/get.dart';
 import 'package:vidhya_hub/app/common/styles/colors.dart';
 import 'package:vidhya_hub/app/modules/bottomview/views/helper.dart';
 
-class CustomAppBar extends StatelessWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: Get.width,
-      child: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceAround,
-        children: [
-          SvgPicture.asset(HomeAssets.drawer),
-          SvgPicture.asset(
-            'assets/icons/vidyahub.svg',
-            height: Get.height * 0.03,
-            width: Get.width * 0.10,
-            fit: BoxFit.cover,
-          ),
-          SvgPicture.asset(HomeAssets.bookmark),
-          SvgPicture.asset(HomeAssets.notification),
-        ],
-      ),
-    );
-  }
-}
-
 PreferredSizeWidget myAppBar() {
   return PreferredSize(
     preferredSize: Size.fromHeight(
       Get.height * 0.07,
     ),
     child: AppBar(
+      automaticallyImplyLeading: false,
       elevation: 0,
       backgroundColor: AppColors.backgroundColor,
       title: SvgPicture.asset(
@@ -44,6 +20,7 @@ PreferredSizeWidget myAppBar() {
         fit: BoxFit.cover,
       ),
       centerTitle: true,
+      leadingWidth: Get.width * 0.13,
       leading: Builder(builder: (context) {
         return InkWell(
           onTap: () {
@@ -51,7 +28,7 @@ PreferredSizeWidget myAppBar() {
           },
           child: Padding(
             padding: EdgeInsets.only(
-              left: Get.width * 0.08,
+              left: Get.width * 0.06,
               // top: Get.height * 0.02,
             ),
             child: SvgPicture.asset(

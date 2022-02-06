@@ -8,7 +8,6 @@ import 'package:vidhya_hub/app/common/styles/colors.dart';
 import '../../../common/widgets/text_field.dart';
 import '../../../routes/app_pages.dart';
 import '../controllers/login_controller.dart';
-import 'package:sizer/sizer.dart';
 
 class LoginView extends GetView<LoginController> {
   @override
