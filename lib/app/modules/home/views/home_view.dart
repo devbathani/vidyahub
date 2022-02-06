@@ -5,6 +5,7 @@ import 'package:get/get.dart';
 import 'package:vidhya_hub/app/common/styles/app_text_style.dart';
 import 'package:vidhya_hub/app/common/styles/colors.dart';
 
+import '../../../common/styles/colors.dart';
 import '../controllers/home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
