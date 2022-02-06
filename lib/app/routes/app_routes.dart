@@ -10,6 +10,8 @@ abstract class Routes {
   static const PRACTISE = _Paths.PRACTISE;
   static const PROFILE = _Paths.PROFILE;
   static const ASSIGNMENT = _Paths.ASSIGNMENT;
+  static const VIDHYA_HUB = _Paths.VIDHYA_HUB;
+  static const BOTTOMVIEW = _Paths.BOTTOMVIEW;
 }
 
 abstract class _Paths {
@@ -22,4 +24,6 @@ abstract class _Paths {
   static const PRACTISE = '/practise';
   static const PROFILE = '/profile';
   static const ASSIGNMENT = '/assignment';
+  static const VIDHYA_HUB = '/vidhya-hub';
+  static const BOTTOMVIEW = '/bottomview';
 }

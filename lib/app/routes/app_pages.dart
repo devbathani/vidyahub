@@ -1,13 +1,15 @@
 import 'package:get/get.dart';
-import 'package:vidhya_hub/app/modules/onboarding/bindings/onboarding_binding.dart';
-import 'package:vidhya_hub/app/modules/onboarding/views/onboarding_view.dart';
 
 import '../modules/assignment/bindings/assignment_binding.dart';
 import '../modules/assignment/views/assignment_view.dart';
+import '../modules/bottomview/bindings/bottomview_binding.dart';
+import '../modules/bottomview/views/bottomview_view.dart';
 import '../modules/home/bindings/home_binding.dart';
 import '../modules/home/views/home_view.dart';
 import '../modules/login/bindings/login_binding.dart';
 import '../modules/login/views/login_view.dart';
+import '../modules/onboarding/bindings/onboarding_binding.dart';
+import '../modules/onboarding/views/onboarding_view.dart';
 import '../modules/otp/bindings/otp_binding.dart';
 import '../modules/otp/views/otp_view.dart';
 import '../modules/practise/bindings/practise_binding.dart';
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.ASSIGNMENT,
       page: () => AssignmentView(),
       binding: AssignmentBinding(),
+    ),
+    GetPage(
+      name: _Paths.BOTTOMVIEW,
+      page: () => BottomviewView(),
+      binding: BottomviewBinding(),
     ),
   ];
 }

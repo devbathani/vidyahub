@@ -7,6 +7,7 @@ import 'package:vidhya_hub/app/modules/login/controllers/login_controller.dart';
 import '../../../common/styles/app_text_style.dart';
 import '../../../common/styles/colors.dart';
 import '../../../common/widgets/otp_field.dart';
+import '../../../routes/app_pages.dart';
 import '../controllers/otp_controller.dart';
 
 class OtpView extends GetView<OtpController> {
@@ -125,7 +126,7 @@ class OtpView extends GetView<OtpController> {
                       ),
                       GestureDetector(
                         onTap: () {
-                          // Get.toNamed(Routes.LOGIN);
+                          Get.offAllNamed(Routes.BOTTOMVIEW);
                         },
                         child: Container(
                           height: Get.height * 0.06,

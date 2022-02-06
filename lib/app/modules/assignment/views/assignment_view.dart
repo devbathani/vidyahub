@@ -8,10 +8,6 @@ class AssignmentView extends GetView<AssignmentController> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('AssignmentView'),
-        centerTitle: true,
-      ),
       body: Center(
         child: Text(
           'AssignmentView is working',
