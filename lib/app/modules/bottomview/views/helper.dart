@@ -3,6 +3,9 @@ class HomeAssets {
   static const String practise = Helper.bottomImage + 'practise.svg';
   static const String assignment = Helper.bottomImage + 'assignment.svg';
   static const String profile = Helper.bottomImage + 'profile.svg';
+  static const String bookmark = Helper.bottomImage + 'bookmark.svg';
+  static const String notification = Helper.bottomImage + 'notification.svg';
+  static const String drawer = Helper.bottomImage + 'drawer.svg';
 }
 
 class Helper {
