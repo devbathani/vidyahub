@@ -7,5 +7,5 @@ class AppColors {
   static Color get txt => const Color(0xff1E2959).withOpacity(0.3);
   static Color get buttontxtColor => const Color(0xff407BFF);
   static Color get otpbuttonColor => const Color(0xffEDEDED);
-  static Color get ashTextColor => const Color(0xff0A1D47).withOpacity(0.4);
+  static Color get ashTextColor => const Color(0xff0A1D47).withOpacity(0.2);
 }
