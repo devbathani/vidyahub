@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:get/get.dart';
+import 'package:vidhya_hub/app/modules/login/controllers/login_controller.dart';
 
 import '../../../common/styles/app_text_style.dart';
 import '../../../common/styles/colors.dart';
@@ -9,6 +10,7 @@ import '../../../common/widgets/otp_field.dart';
 import '../controllers/otp_controller.dart';
 
 class OtpView extends GetView<OtpController> {
+  final loginController = Get.put(LoginController());
   @override
   Widget build(BuildContext context) {
     final h = Get.height;
@@ -73,7 +75,8 @@ class OtpView extends GetView<OtpController> {
                                 ),
                               ),
                               TextSpan(
-                                text: '+91-9812345678 ',
+                                text:
+                                    '+91-${loginController.phoneController.text} ',
                                 style: MyTextStyles.hintText.copyWith(
                                   fontWeight: FontWeight.w600,
                                   color: AppColors.buttonColor,
