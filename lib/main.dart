@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import 'package:get/get.dart';
+import 'package:sizer/sizer.dart';
 
 import 'app/routes/app_pages.dart';
 
@@ -14,11 +15,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
-      minTextAdapt: true,
-      splitScreenMode: true,
-      designSize: Size(375, 812),
-      builder: () => GetMaterialApp(
+    return Sizer(
+      builder: (context, orientation, deviceType) => GetMaterialApp(
         debugShowCheckedModeBanner: false,
         title: "VidyaHub",
         initialRoute: AppPages.INITIAL,
