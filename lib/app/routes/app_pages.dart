@@ -1,4 +1,7 @@
 import 'package:get/get.dart';
+import 'package:vidhya_hub/app/modules/onboarding/bindings/onboarding_binding.dart';
+import 'package:vidhya_hub/app/modules/onboarding/views/onboarding_view.dart';
+import 'package:vidhya_hub/app/modules/otp/views/otp_verify_view.dart';
 
 import '../modules/assignment/bindings/assignment_binding.dart';
 import '../modules/assignment/views/assignment_view.dart';
@@ -50,6 +53,11 @@ class AppPages {
     GetPage(
       name: _Paths.OTP,
       page: () => OtpView(),
+      binding: OtpBinding(),
+    ),
+    GetPage(
+      name: _Paths.OTPVERIFY,
+      page: () => OtpVerifyView(),
       binding: OtpBinding(),
     ),
     GetPage(

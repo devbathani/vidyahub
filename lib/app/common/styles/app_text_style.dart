@@ -15,7 +15,7 @@ abstract class MyTextStyles {
   static TextStyle get loginHeader => GoogleFonts.poppins(
         color: AppColors.buttonColor,
         fontSize: 14.sp,
-        fontWeight: FontWeight.w500,
+        fontWeight: FontWeight.w600,
       );
   static TextStyle get hintText => GoogleFonts.poppins(
         color: AppColors.buttonColor,
