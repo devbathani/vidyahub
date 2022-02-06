@@ -34,7 +34,7 @@ class MyBottomBar extends GetView<BottomviewController> {
                       ? AppColors.tabsColor
                       : AppColors.buttonColor,
                 ),
-                label: 'Home',
+                label: 'Home',  
               ),
               BottomNavigationBarItem(
                 icon: SvgPicture.asset(

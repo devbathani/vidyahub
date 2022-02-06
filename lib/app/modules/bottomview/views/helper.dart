@@ -7,4 +7,5 @@ class HomeAssets {
 
 class Helper {
   static const String bottomImage = 'assets/bottomview/';
+  static const String homeview = 'assets/homeview/';
 }
