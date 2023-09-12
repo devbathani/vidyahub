@@ -1,9 +1,14 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class RegisterController extends GetxController {
-  //TODO: Implement RegisterController
 
-  final count = 0.obs;
+  final TextEditingController fullname = TextEditingController();
+  final TextEditingController emailId = TextEditingController();
+  final TextEditingController phoneController = TextEditingController();
+
+
+
   @override
   void onInit() {
     super.onInit();
@@ -14,7 +19,5 @@ class RegisterController extends GetxController {
     super.onReady();
   }
 
-  @override
-  void onClose() {}
-  void increment() => count.value++;
+ 
 }

@@ -1,9 +1,9 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 class LoginController extends GetxController {
-  //TODO: Implement LoginController
+  final TextEditingController phoneController = TextEditingController();
 
-  final count = 0.obs;
   @override
   void onInit() {
     super.onInit();
@@ -13,8 +13,4 @@ class LoginController extends GetxController {
   void onReady() {
     super.onReady();
   }
-
-  @override
-  void onClose() {}
-  void increment() => count.value++;
 }
